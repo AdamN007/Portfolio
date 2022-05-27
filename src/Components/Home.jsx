@@ -1,8 +1,9 @@
 import React from "react";
 import Typed from "typed.js";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react"; 
+import Animation from "./Animation";
 
-function Home(){
+const Home = () => {
 
     const el = useRef(null);
 
@@ -28,7 +29,8 @@ function Home(){
 
 
     return(
-        <div className="flex h-5/6 w-screen z-10 text-white absolute justify-center items-center">
+      <Animation>
+        <div className="flex h-screen w-screen z-10 text-white pb-24  justify-center items-center">
             <div className="justify-center items-center w-screen">
                 <div className=" text-center">
                     <p className="text-6xl">Hello, I'm <span className="text-green-400">Adam Napper</span></p> 
@@ -39,6 +41,7 @@ function Home(){
             </div>
             
         </div>
+      </Animation>
     );
 }
 

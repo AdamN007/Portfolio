@@ -1,24 +1,28 @@
 
 import React from "react";
-import { Route, Routes,} from "react-router-dom";
+import { Route, Routes, useLocation,} from "react-router-dom";
 import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
-import Background from "./Components/Background";
 import About from "./Components/About";
+import Contact from "./Components/Contact";
+import { AnimatePresence } from "framer-motion";
+import Projects from "./Components/Projects";
 
 function App(){
 
- 
+  const location = useLocation();
 
   return(
-    <div className="container-fluid">
-
-        <Routes>
+    <div>
+      <AnimatePresence exitBeforeEnter>
+        <Routes key={location.pathname} location={location}>
           <Route path="*" element={<Home/>}/>
           <Route path="Home" element={<Home/>}/> 
           <Route path="About" element={<About/>}/>
+          <Route path="Projects" element={<Projects/>}/>
+          <Route path="Contact" element={<Contact/>}/>
         </Routes>
-        <Background/>
+      </AnimatePresence>
         <Navbar/>
     </div>
   );
