@@ -8,7 +8,7 @@ function About(){
         <Animation>
         <div className="flex h-screen w-screen z-10 text-white justify-center items-center">
                 <div className="flex w-1/2 pb-16">
-                    <div className="mx-auto w-1/2 backgroundCol2 p-5">
+                    <div className="mx-auto w-1/2 backgroundCol2s p-5">
                         <h1 className="text-4xl text-green-500 pb-5">About Me</h1> 
                         <h2 className="text-xl text-green-400 pb-2"> I'm a web developer from <br/> Dublin, Ireland.</h2>
                         <p className="text-md pb-3"> I am currently studying Computing at Dublin Business School to obtain a honours degree.</p>
