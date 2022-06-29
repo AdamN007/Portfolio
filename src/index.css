@@ -18,12 +18,121 @@ html, body {
     overflow-y: hidden;
     overflow-x: hidden;
     --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+    background-color: 
+    rgb(15, 15, 15);
+}
+
+.icon {
+    fill: #22c55e;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.icon:hover{
+    fill: #4ade80;
+    -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .active {
-    color: rgb(74 222 128);
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    color: 
+    #22c55e;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
 }
 
+.backgroundCol {
+    background-color: rgb(15, 15, 15);
+}
+
+.backgroundCol2 {
+    background-color: rgb(24, 24, 24) ;
+}
+
+.borderCol {
+    border-color: rgb(20, 20, 20) ;
+}
+
+
+.hoverCol :hover{
+    background-color: rgb(40, 40, 40);
+}
+
+.line1 {
+    height: 2px;
+    background:#22c55e; ;
+}
+
+.rotate {
+    transform:rotate(270deg);
+}
+
+.hello {
+    display: flex;
+  flex-direction: row;
+}
+
+.hello::after{
+    content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #22c55e;
+  margin: 10px;
+}
+
+.hello2 {
+    display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+}
+
+.hello2::after{
+    content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #22c55e;
+  margin-bottom: 33px;
+}
+
+.soc {
+    display: block;
+    font-size: 0;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .soc li {
+    display: inline-block;
+    margin: 1rem;
+  }
+  
+  .soc a,
+  .soc svg {
+    display: block;
+  }
+  
+  .soc a {
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #fff;
+  }
+  
+  .soc svg {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .soc em {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -0.75em;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }

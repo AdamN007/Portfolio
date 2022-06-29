@@ -30,13 +30,13 @@ const Home = () => {
 
     return(
       <Animation>
-        <div className="flex h-screen w-screen z-10 text-white pb-24  justify-center items-center">
+        <div className="flex h-screen w-screen z-10 text-white pb-9  justify-center items-center">
             <div className="justify-center items-center w-screen">
                 <div className=" text-center">
-                    <p className="text-6xl">Hello, I'm <span className="text-green-400">Adam Napper</span></p> 
+                    <p className="text-6xl">Hello, I'm <span className="text-green-500">Adam Napper</span></p> 
                 </div>
                 <div className=" text-center">
-                    <h1 className="text-6xl">I'm a <span className="text-green-400" ref={el}></span> developer</h1>
+                    <h1 className="text-6xl">I'm a <span className="text-green-500" ref={el}></span> developer</h1>
                 </div>
             </div>
             

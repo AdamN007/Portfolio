@@ -14,16 +14,16 @@ function App(){
 
   return(
     <div>
+      <Navbar/>
       <AnimatePresence exitBeforeEnter>
         <Routes key={location.pathname} location={location}>
           <Route path="*" element={<Home/>}/>
-          <Route path="Home" element={<Home/>}/> 
+          <Route path="Home" element={<Home/>}/>
           <Route path="About" element={<About/>}/>
           <Route path="Projects" element={<Projects/>}/>
           <Route path="Contact" element={<Contact/>}/>
         </Routes>
       </AnimatePresence>
-        <Navbar/>
     </div>
   );
 

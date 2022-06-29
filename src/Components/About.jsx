@@ -7,16 +7,16 @@ function About(){
     return(
         <Animation>
         <div className="flex h-screen w-screen z-10 text-white justify-center items-center">
-                <div className="flex w-1/2 pb-24">
-                    <div className="mx-auto w-1/2">
-                        <h1 className="text-6xl text-green-400 pb-7">About Me</h1> 
-                        <h2 className="text-3xl text-green-500 pb-5"> I'm a web developer from <br/> Dublin, Ireland.</h2>
-                        <p className="text-xl pb-3"> I am currently studying Computing at Dublin Business School to obtain a honours degree.</p>
-                        <p className="text-xl pb-3"> I have a big interest in developing Web3 applications and I'd love to hear about any projects you have in the works, 
+                <div className="flex w-1/2 pb-16">
+                    <div className="mx-auto w-1/2 backgroundCol2 p-5">
+                        <h1 className="text-4xl text-green-500 pb-5">About Me</h1> 
+                        <h2 className="text-xl text-green-400 pb-2"> I'm a web developer from <br/> Dublin, Ireland.</h2>
+                        <p className="text-md pb-3"> I am currently studying Computing at Dublin Business School to obtain a honours degree.</p>
+                        <p className="text-md pb-3"> I have a big interest in developing Web3 applications and I'd love to hear about any projects you have in the works, 
                         you can contact me <Link to="/About" className="text-green-500 hover:text-green-300 " >here :)</Link>.</p>
-                        <p className="text-xl pb-3"> Although the skills I have on display are technologise I'm very good at I am a quick learner and can pick up new 
+                        <p className="text-md pb-3"> Although the skills I have on display are technologise I'm very good at I am a quick learner and can pick up new 
                         technologise when needed.</p>
-                        <p className="text-xl pb-3"> I have a passion for writing clean and effiecient code using the latest development princibles and techniques to ensure
+                        <p className="text-md pb-3"> I have a passion for writing clean and effiecient code using the latest development princibles and techniques to ensure
                         each site I build is search engine friendly and responsive.
                         </p>
                     </div>
@@ -25,10 +25,10 @@ function About(){
 
             <div className="  w-1/2 ">
                 <div className="container pb-24">
-                <h2 className="text-3xl text-green-400 pb-2 pt-5 pl-5"> My Skills</h2>
-                    <div className="w-4/6 rounded-3xl bg-gray-800 shadow">
+                <h2 className="text-3xl text-green-500 pb-2 pt-5 pl-5"> My Skills</h2>
+                    <div className="w-4/6 rounded-3xl backgroundCol2 drop-shadow-xl p-5">
                     
-                            <table class=" text-center mx-auto">
+                            <table class=" text-center mx-auto w-full">
                                 <tbody>
                                     <tr> 
                                         <Icon img="Images/ReactLogo.png" p="React.js"/>
@@ -54,7 +54,6 @@ function About(){
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-green-500 pt-3 pl-5">It's satisfying to flip the logos :D</p>
                 </div>
 
             </div>
